@@ -3,6 +3,13 @@
 ## Active Phase
 Phase 1 – Execution Engine Stabilization
 
+## Phase Completion Criteria
+- [ ] 72 hours stable runtime
+- [ ] Trades open and close correctly
+- [ ] ROI/Stoploss verified
+- [ ] DB persists across restart
+- [ ] No unexplained errors
+
 ## Current Execution Engine
 Freqtrade (crypto execution only)
 
@@ -15,13 +22,11 @@ Dry-run (paper trading)
 ## Strategy
 AlexStrategy (default RSI template)
 
-## Current Status
-- Bot runs successfully
-- UI loads
-- Telegram configured (may need valid token)
-- No confirmed live trades yet
-- VolumePairList active
-- No architectural modifications made
+## Current Runtime Status
+- Bot running: Yes
+- UI accessible: Yes
+- Trades observed: TBD
+- Errors observed: None
 
 ## Immediate Goal
-Observe execution engine behavior and confirm trade lifecycle works end-to-end.
+Validate execution lifecycle end-to-end.
