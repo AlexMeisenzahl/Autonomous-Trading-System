@@ -1,0 +1,742 @@
+📜 AUTONOMOUS TRADING SYSTEM
+MASTER CONSTITUTION — SOURCE OF TRUTH
+
+Version 3.0 — Governing Doctrine
+
+1. PROJECT IDENTITY
+
+This is not:
+
+A hobby crypto bot
+
+A dashboard redesign experiment
+
+A short-term money attempt
+
+A chaotic AI coding experiment
+
+This is:
+
+A long-term autonomous trading systems engineering project.
+
+The objective is to design, build, and evolve a modular, execution-agnostic trading system capable of operating continuously and generating sustainable profits over time.
+
+Structural integrity is prioritized over speed.
+
+2. CORE OBJECTIVE
+
+Build a modular, autonomous, evolving trading system capable of:
+
+Testing market strategies (crypto and prediction markets)
+
+Executing trades automatically
+
+Logging all activity
+
+Evaluating performance over time
+
+Improving based on structured data
+
+Allocating capital intelligently
+
+Operating 24/7 with minimal human intervention
+
+Eventually producing real, sustainable profits
+
+3. TRUE END PRODUCT VISION
+
+The final system will include:
+
+A reusable signal engine
+
+A risk management layer
+
+A logging layer
+
+A performance intelligence layer
+
+A capital allocation engine
+
+Regime detection logic
+
+Multiple execution engines:
+
+Crypto (Freqtrade-based)
+
+Polymarket (Web3-based)
+
+Arbitrage engine
+
+The system must evolve, not remain static.
+
+Execution venues are modular workers.
+Core logic is the brain.
+
+4. MASTER PHASE ROADMAP (LOCKED ORDER)
+
+Phases may not be skipped.
+
+Phase 0 — Asset Audit & Idea Extraction
+
+Audit old dashboard project
+
+Audit Polymarket prototype
+
+Extract reusable ideas
+
+Categorize concepts (Signal / Risk / UI / Execution / Experimental)
+
+Discard messy structure
+
+No code merging
+
+Duration: 1–2 sessions
+
+Phase 1 — Execution Engine Stabilization (Current)
+
+Stabilize Freqtrade as crypto execution worker
+
+Confirm trade lifecycle
+
+Confirm DB logging
+
+Confirm restart stability
+
+Confirm dry-run integrity
+
+Observe system under runtime
+
+No refactors.
+No optimization.
+No Polymarket integration.
+
+Duration: 3–7 days observation
+
+Phase 2 — Modular Signal Extraction
+
+Extract signal logic from Freqtrade strategy file
+
+Build reusable /core signal modules
+
+Preserve execution isolation
+
+Keep architecture clean
+
+Duration: 1–2 weeks
+
+Phase 3 — Performance Intelligence Layer
+
+Log entry conditions
+
+Log exit conditions
+
+Log regime characteristics
+
+Track expectancy by regime
+
+Detect performance decay
+
+Evaluate edge scientifically
+
+Duration: 2–4 weeks
+
+Phase 4 — Capital Allocation & Multi-Strategy
+
+Support multiple strategies
+
+Allocate capital dynamically
+
+Implement drawdown controls
+
+Rank strategy performance
+
+Duration: 1–2 months
+
+Phase 5 — Polymarket Execution Engine
+
+Build native Polymarket adapter
+
+Use shared signal engine
+
+Maintain architectural isolation
+
+Do NOT force Polymarket into Freqtrade
+
+Phase 6 — Arbitrage Layer
+
+Cross-venue price monitoring
+
+Spread detection
+
+Execution routing
+
+Risk-balanced arbitrage allocation
+
+5. ARCHITECTURAL LAW (PERMANENT)
+
+The system must remain layered:
+
+Signal Layer
+
+Risk Layer
+
+Execution Layer
+
+Logging Layer
+
+Performance Analysis Layer
+
+Capital Allocation Layer
+
+No cross-layer contamination.
+
+Execution engines are replaceable workers.
+
+Signal logic must be portable.
+
+6. FREQTRADE POLICY
+
+Freqtrade core files must never be modified.
+
+Only user-level strategy integrations allowed.
+
+Freqtrade is an execution engine only.
+
+Upgrade compatibility must be preserved.
+
+Freqtrade is not the master architecture.
+
+7. POLYMARKET POLICY
+
+Polymarket requires a dedicated Web3 execution adapter.
+
+It must not be forced into CCXT design.
+
+Shared signal logic may be imported.
+
+Execution logic must remain isolated.
+
+8. ARBITRAGE POLICY
+
+Arbitrage is a separate strategy class.
+
+Types:
+
+Cross-exchange crypto arbitrage
+
+Crypto ↔ prediction market inefficiencies
+
+Intra-market spreads
+
+Arbitrage logic must not contaminate directional strategy logic.
+
+9. DEVELOPMENT DISCIPLINE RULES
+
+No chaos.
+
+No impulsive changes.
+
+No premature ML complexity.
+
+No architectural shortcuts.
+
+No skipping phases.
+
+Every major decision documented.
+
+Every change reversible when possible.
+
+Documentation is law.
+
+Complexity must be justified.
+
+If unsure — do not proceed.
+
+10. USER CONSTRAINTS
+
+The project owner:
+
+Has no coding experience.
+
+Is not comfortable with terminal.
+
+Requires step-by-step instructions.
+
+Requires clarity and precision.
+
+Must not be overwhelmed with assumptions.
+
+All instructions must be beginner-safe.
+
+11. AI OPERATING ROLE
+
+The AI acts as:
+
+Strategic Architect
+
+Systems Product Manager
+
+Structural Enforcer
+
+Complexity Gatekeeper
+
+Phase Discipline Monitor
+
+Risk Evaluator
+
+The AI will:
+
+Stop contradictory ideas.
+
+Prevent architectural drift.
+
+Reject chaotic integration.
+
+Enforce discipline.
+
+The AI will NOT:
+
+Encourage shortcuts.
+
+Skip phases.
+
+Modify third-party core systems impulsively.
+
+Introduce unnecessary complexity.
+
+12. CONTRADICTION ENFORCEMENT POLICY
+
+If any suggestion contradicts:
+
+Architectural layering
+
+Phase roadmap
+
+Execution isolation
+
+Freqtrade policy
+
+Polymarket policy
+
+The AI must stop the process and explain the conflict.
+
+Guardrails are mandatory.
+
+13. MEMORY PROTOCOL
+
+AI memory is not permanent.
+
+Therefore:
+
+Repository documentation is the permanent memory.
+
+Each session begins with:
+
+Current Phase
+
+Last Change
+
+Current Goal
+
+Constraints
+
+Blockers
+
+If it is not written in the repository, it does not exist.
+
+14. LOGGING & EVOLUTION DIRECTIVE
+
+The system must eventually:
+
+Log entry context
+
+Log exit context
+
+Log regime data
+
+Track performance by condition
+
+Detect strategy decay
+
+Disable failing strategies
+
+Adjust capital allocation
+
+Improve based on structured evaluation
+
+The system must evolve based on data.
+
+15. SUCCESS CRITERIA
+
+Short-Term:
+
+Stable crypto execution
+
+Clean repository structure
+
+Phase discipline maintained
+
+Mid-Term:
+
+Portable signal architecture
+
+Data-driven evaluation layer
+
+Capital allocation logic
+
+Long-Term:
+
+Profitable autonomous trading
+
+Multi-executor system
+
+Self-improving framework
+
+Minimal manual intervention
+
+16. REALITY & TIMELINE EXPECTATION
+
+This is not a 2-week project.
+
+This is a 6–18 month structured build.
+
+Short-term: infrastructure mastery
+Medium-term: signal modularity
+Long-term: capital scaling & refinement
+
+Most bots fail due to lack of discipline.
+This project will not.
+
+17. FINAL GOVERNING PRINCIPLE
+
+We are not building a bot.
+
+We are building a trading systems laboratory.
+
+Structure first.
+Execution second.
+Optimization last.
+
+Deviation from this doctrine requires explicit documentation and justification.
+
+SECTION 18 — SYSTEM ARCHITECTURE BLUEPRINT
+
+The Autonomous Trading System (ATS) will consist of three layers of repositories:
+
+18.1 Master Repository (Source of Truth)
+
+Repository:
+
+Autonomous-Trading-System
+
+Purpose:
+
+Documentation
+
+Core signal modules (eventually)
+
+Strategy definitions
+
+Performance evaluation modules
+
+Capital allocation logic
+
+Architecture governance
+
+This is the brain.
+
+This repo contains:
+
+/docs
+/core
+/performance
+/capital
+
+This repo does NOT contain:
+
+Exchange-specific execution engines
+
+Freqtrade source code
+
+Web3 node integrations
+
+18.2 Execution Engine Repositories
+
+Execution engines are isolated workers.
+
+Crypto Execution Engine
+
+Repository:
+
+freqtrade (external dependency)
+
+We do NOT fork and modify core.
+
+Instead:
+
+ATS /core modules are imported into Freqtrade strategies.
+
+Freqtrade is treated as external infrastructure.
+
+If needed:
+We create:
+
+/crypto_executor_adapter
+
+Inside ATS to interface cleanly.
+
+Polymarket Execution Engine
+
+Will live in:
+
+/polymarket_executor
+
+Inside ATS or separate repo if complexity grows.
+
+This will:
+
+Connect to Web3 / Polymarket API
+
+Execute trades
+
+Import shared signal logic from /core
+
+It must not share execution code with crypto.
+
+Arbitrage Engine
+
+Will be separate module:
+
+/arbitrage_engine
+
+Must not be embedded inside directional strategy logic.
+
+SECTION 19 — REPO GOVERNANCE RULES
+
+The Master Repo governs logic and architecture.
+
+Execution engines remain isolated.
+
+No direct cross-imports between execution engines.
+
+Shared logic must live in /core.
+
+UI layer (if built) must sit on top of stable data interfaces.
+
+We do not mix UI with execution logic.
+
+SECTION 20 — HOW WE UTILIZE OLD PROJECTS
+
+Old dashboard project:
+
+Treated as idea sandbox.
+
+We extract:
+
+Signal ideas
+
+Risk models
+
+UI concepts
+
+We do NOT reuse structure.
+
+Polymarket prototype:
+
+Treated as execution proof-of-concept.
+
+Extract API interaction knowledge.
+
+Discard messy architecture.
+
+No code copy-paste.
+
+Only idea extraction.
+
+SECTION 21 — CURSOR & CODE GENERATION POLICY
+
+Cursor is a tool.
+Not an architect.
+
+Rules:
+
+Cursor is used for:
+
+Writing isolated modules
+
+Refactoring contained files
+
+Generating adapters
+
+Minor UI builds
+
+Cursor is NOT used for:
+
+Redesigning architecture
+
+Modifying Freqtrade core
+
+Multi-module refactors without review
+
+Large-scale integration without written plan
+
+Before using Cursor:
+
+Architecture plan must be written.
+
+Scope must be defined.
+
+File boundaries must be clear.
+
+After Cursor writes code:
+
+We review structure.
+
+We verify layering.
+
+We ensure no cross-contamination.
+
+Cursor writes code.
+I enforce structure.
+
+SECTION 22 — GITHUB WORKFLOW POLICY
+
+All changes follow this pattern:
+
+Write intent in docs.
+
+Define scope.
+
+Identify layer impacted.
+
+Implement in small increments.
+
+Commit with descriptive message.
+
+No large blind merges.
+
+Pull Requests:
+
+Required for architectural changes.
+
+Optional for small module edits.
+
+Must reference phase.
+
+No silent modifications.
+
+SECTION 23 — AI COMMUNICATION PROTOCOL
+
+I will:
+
+Be decisive.
+
+Reject unsafe ideas.
+
+Flag contradictions.
+
+Enforce roadmap.
+
+Think like a human systems engineer.
+
+I will NOT:
+
+Encourage impulsive builds.
+
+Allow phase skipping.
+
+Suggest unstable integrations.
+
+Overwhelm you with unnecessary abstraction.
+
+Communication style:
+
+Clear.
+
+Layered.
+
+No vague instructions.
+
+Step-by-step when needed.
+
+Strategic when appropriate.
+
+SECTION 24 — USER RESPONSIBILITIES
+
+You will:
+
+Not override architecture impulsively.
+
+Not jump phases emotionally.
+
+Not attach to messy legacy code.
+
+Document major decisions.
+
+Accept “not yet” when necessary.
+
+You will not:
+
+Merge engines.
+
+Rewrite core dependencies.
+
+Add complexity prematurely.
+
+Optimize before stability.
+
+SECTION 25 — COMPLETE END GOAL DEFINITION
+
+Final system must:
+
+Support multiple strategies simultaneously.
+
+Track performance per strategy and regime.
+
+Dynamically allocate capital.
+
+Disable failing strategies.
+
+Support crypto and prediction markets.
+
+Support arbitrage.
+
+Log every decision.
+
+Be upgrade-compatible.
+
+Be modular and extensible.
+
+Operate autonomously.
+
+If it cannot evolve, it is incomplete.
+
+SECTION 26 — WHAT WE DO NOT BUILD
+
+We do NOT build:
+
+A flashy dashboard first.
+
+An ML black box.
+
+A single-indicator bot.
+
+A tightly coupled execution monster.
+
+A system dependent on one exchange.
+
+SECTION 27 — MASTER OPERATING PRINCIPLE
+
+We are building:
+
+A trading systems laboratory.
+
+Not a quick bot.
+
+Structure first.
+Execution second.
+Optimization third.
+
+
+
+That locks the entire operating system of this project permanently.
