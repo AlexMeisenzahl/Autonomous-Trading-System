@@ -1,150 +1,260 @@
-# PROJECT CHARTER
+# PROJECT CHARTER – FULL SYSTEM CONSTITUTION
 Autonomous-Trading-System
+Version 1.0
 
 ---
 
-## 1. Core Objective
+# 1. PROJECT IDENTITY
+
+This is not a hobby bot project.
+
+This is a long-term systems engineering project whose objective is to design, build, and evolve a modular autonomous trading system capable of operating continuously and generating sustainable profits over time.
+
+This project prioritizes:
+
+- Structure
+- Modularity
+- Clean architecture
+- Reversibility
+- Phase discipline
+- Long-term scalability
+- System survivability
+
+Speed is secondary to structural integrity.
+
+---
+
+# 2. CORE OBJECTIVE
 
 Build a modular, autonomous, evolving trading system capable of:
 
-- Testing market strategies (crypto and prediction markets)
+- Testing market strategies (crypto + prediction markets)
 - Executing trades automatically
 - Logging all activity
 - Evaluating performance over time
-- Improving strategies systematically
-- Running continuously with minimal human intervention
-- Eventually generating real, sustainable profits
-
-This is a long-term personal systems engineering project.
-
----
-
-## 2. Long-Term Vision
-
-Develop autonomous bots that:
-
-- Operate 24/7
-- Are modular and upgradeable
-- Separate signal logic from execution logic
-- Support multiple execution venues (crypto, Polymarket, arbitrage)
-- Log performance in a structured way
-- Adapt based on data
-- Allocate capital intelligently
-- Require minimal manual input once deployed
-
-The system must evolve, not remain static.
+- Improving based on data
+- Allocating capital intelligently
+- Operating 24/7 with minimal human intervention
+- Eventually producing real, sustainable profits
 
 ---
 
-## 3. Current Phase
+# 3. LONG-TERM VISION
 
-Phase 1 – Execution Engine Stabilization
+The final system will include:
 
-Current focus:
+- A reusable signal engine
+- Multiple execution engines (crypto, Polymarket, arbitrage)
+- A risk management layer
+- A logging & performance intelligence layer
+- A capital allocation engine
+- Regime detection logic
+- Strategy evolution framework
+
+Execution venue must be modular.
+Signal logic must be portable.
+No single exchange dependency may control architecture.
+
+---
+
+# 4. MASTER ROADMAP (LOCKED PHASES)
+
+## Phase 1 – Execution Engine Stabilization
 - Stabilize Freqtrade as crypto execution engine
-- Understand lifecycle of trades
-- Confirm logging, database, and UI behavior
-- Run dry-run trading continuously
-- No architectural refactors yet
+- Understand trade lifecycle
+- Confirm logging + database structure
+- Run dry-run continuously
+- No architecture refactor
+- No premature complexity
 
-No premature complexity.
+## Phase 2 – Modular Strategy Architecture
+- Extract signal logic from execution
+- Create reusable core modules
+- Ensure strategy logic is execution-agnostic
+
+## Phase 3 – Performance Intelligence Layer
+- Log regime data
+- Evaluate performance by environment
+- Identify strategy failure conditions
+- Enable data-driven refinement
+
+## Phase 4 – Capital Allocation Layer
+- Support multiple strategies
+- Dynamic capital allocation
+- Drawdown control logic
+
+## Phase 5 – Polymarket Execution Engine
+- Build Polymarket-native executor
+- Integrate shared signal engine
+- Maintain architectural separation from crypto
+
+## Phase 6 – Arbitrage Engine
+- Multi-venue price monitoring
+- Spread detection
+- Execution routing logic
+- Risk-balanced arbitrage allocation
+
+Phases may not be skipped.
 
 ---
 
-## 4. Development Principles (Non-Negotiable)
+# 5. ARCHITECTURAL PRINCIPLES
+
+The system must remain layered:
+
+1. Signal Layer
+2. Risk Layer
+3. Execution Layer
+4. Logging Layer
+5. Performance Analysis Layer
+6. Capital Allocation Layer
+
+No cross-layer contamination.
+
+Execution engines are workers.
+Core system is the brain.
+
+Freqtrade is an execution engine only.
+It is not the master system.
+
+Polymarket will be a separate execution engine.
+It will not be forced into Freqtrade architecture.
+
+---
+
+# 6. FREQTRADE POLICY
+
+- Freqtrade core files must never be modified.
+- Only user_data and integration layers may be customized.
+- Freqtrade is treated as an external dependency.
+- Upgrade compatibility must be preserved.
+
+---
+
+# 7. POLYMARKET POLICY
+
+- Polymarket is fundamentally different from centralized exchanges.
+- It requires its own execution adapter.
+- It must not be forced into CCXT architecture.
+- Shared signal logic will be imported from core modules.
+
+---
+
+# 8. ARBITRAGE POLICY
+
+Arbitrage is a separate strategy class.
+
+Types considered:
+- Cross-exchange crypto arbitrage
+- Crypto ↔ prediction market arbitrage
+- Intra-market inefficiency detection
+
+Arbitrage logic must not contaminate trend strategy logic.
+
+---
+
+# 9. DEVELOPMENT DISCIPLINE RULES
 
 1. No chaos.
 2. No impulsive changes.
-3. No modifying third-party engine core files.
-4. No mixing architectural layers.
-5. No premature AI or optimization complexity.
+3. No premature AI/ML complexity.
+4. No architectural shortcuts.
+5. No mixing phases.
 6. Every major decision must be documented.
-7. Every change must be reversible unless intentionally permanent.
-8. Clean modular design is prioritized over speed.
-9. Phase discipline must be enforced.
-10. The repository documentation is the single source of truth.
+7. Every change must be reversible when possible.
+8. Repository documentation is law.
+9. Complexity must be justified before introduction.
+10. If unsure, do not proceed.
 
 ---
 
-## 5. Architectural Principles
+# 10. USER CONSTRAINTS
 
-The system must be layered:
+The project owner:
 
-Signal Layer
-Risk Layer
-Execution Layer
-Logging Layer
-Performance Analysis Layer
-Capital Allocation Layer
+- Has no coding experience.
+- Is not comfortable with terminal.
+- Requires step-by-step instructions.
+- Requires clarity and precision.
+- Needs structure and guidance.
+- Must not be overwhelmed with assumptions.
 
-These layers must remain separated.
-
-Execution engines (crypto, Polymarket, arbitrage) must be modular workers.
-
-Core strategy logic must eventually live independently of execution engines.
+All instructions must be beginner-safe.
 
 ---
 
-## 6. Constraints
+# 11. AI OPERATING ROLE
 
-- The project owner has no coding experience.
-- Instructions must be clear, detailed, and step-by-step.
-- Terminal instructions must be explicit and beginner-safe.
-- No assumptions of prior programming knowledge.
-- Changes must be explained clearly before being executed.
-
----
-
-## 7. AI Role Definition
-
-The AI operates as:
+The AI acts as:
 
 - Strategic Architect
 - Systems Product Manager
-- Structure Enforcer
-- Complexity Gatekeeper
-- Risk Evaluator
+- Structural Enforcer
 - Phase Discipline Monitor
+- Risk & Complexity Evaluator
+- Clean Architecture Guardian
 
 The AI does NOT:
 
-- Encourage chaotic experimentation
-- Skip architectural planning
-- Modify third-party core systems impulsively
-- Introduce unnecessary complexity
+- Encourage chaos
+- Skip phases
+- Introduce premature complexity
+- Modify third-party cores impulsively
 
 ---
 
-## 8. Documentation Protocol
+# 12. MEMORY PROTOCOL
 
-Before each work session, the following must be identified:
+AI memory is not persistent.
 
-- Current Phase
-- Last Change Made
-- Current Goal
-- Known Constraints
-- Active Blockers
+Therefore:
 
-If it is not written in the repository, it does not exist.
+- Repository documentation is the permanent memory.
+- Each session must begin with:
+  - Current Phase
+  - Last Change
+  - Current Goal
+  - Constraints
+  - Blockers
+- If it is not written in the repo, it does not exist.
 
 ---
 
-## 9. Success Criteria
+# 13. LOGGING & EVOLUTION GOAL
 
-Short-term:
-- Stable execution engine
+The long-term system must:
+
+- Log entry conditions
+- Log exit conditions
+- Log regime characteristics
+- Track expectancy by regime
+- Detect performance decay
+- Adapt capital allocation
+- Disable failing strategies automatically
+
+The system must evolve based on data.
+
+---
+
+# 14. SUCCESS CRITERIA
+
+Short-Term:
+- Stable crypto execution engine
 - Clean modular repository
-- Clear roadmap
+- Clear roadmap enforcement
 
-Mid-term:
-- Reusable signal architecture
-- Performance logging and evaluation layer
+Mid-Term:
+- Portable signal engine
+- Strategy evaluation layer
+- Capital allocation logic
 
-Long-term:
-- Profitable autonomous strategies
+Long-Term:
+- Profitable autonomous trading
 - Multi-executor architecture
-- Continuous improvement framework
+- Self-improving system
+- Minimal manual intervention
 
 ---
 
-This document governs all future architectural and development decisions.
+This document governs all decisions.
+Deviation requires explicit justification and documentation.
