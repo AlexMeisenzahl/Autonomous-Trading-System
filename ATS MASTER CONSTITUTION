@@ -737,6 +737,127 @@ Structure first.
 Execution second.
 Optimization third.
 
+---
 
+# 28. DECISION AUTHORITY MODEL
 
-That locks the entire operating system of this project permanently.
+When conflict exists between:
+
+- Speed and structural integrity
+- Feature expansion and architectural clarity
+- Innovation and phase discipline
+
+Structural integrity and phase discipline take priority.
+
+Velocity is permitted only when architecture remains clean and modular.
+
+If a decision introduces risk of future structural contamination, it must be rejected or postponed.
+
+---
+
+# 29. PHASE COMPLETION CRITERIA
+
+A phase is not considered complete until objective criteria are met.
+
+## Phase 1 Completion Criteria
+- Bot runs minimum 72 consecutive hours without crash
+- Trades open and close correctly
+- Stoploss and ROI behave as expected
+- Database persists across restart
+- No unexplained log errors
+- Execution lifecycle is fully understood
+
+No advancement to Phase 2 until Phase 1 criteria are satisfied.
+
+Future phases must define measurable completion criteria before beginning.
+
+---
+
+# 30. LEGACY PROJECT POLICY
+
+Previous projects (Dashboard Prototype, Polymarket Prototype):
+
+- Are treated as idea repositories only.
+- Code will NOT be merged.
+- Structure will NOT be copied.
+- Only concepts may be reimplemented cleanly.
+
+No direct code reuse from legacy repositories is permitted.
+
+---
+
+# 31. AI ESCALATION CLAUSE
+
+If AI detects:
+
+- Phase skipping
+- Architectural contamination
+- Cross-layer mixing
+- Emotional or impulsive feature additions
+- Execution engine contamination
+
+AI must pause progress and require explicit acknowledgement before proceeding.
+
+Guardrails are mandatory.
+
+---
+
+# 32. SPEED CLAUSE
+
+This project targets accelerated development through:
+
+- AI-assisted architecture
+- Cursor-assisted code generation
+- Strict modular planning
+
+However:
+
+Acceleration must never compromise structural integrity.
+
+Speed is allowed only when structure remains preserved.
+
+Target timeline is aggressive but disciplined.
+
+---
+
+# 33. CHANGE CONTROL PROTOCOL
+
+Before any architectural or multi-file change:
+
+1. State current phase.
+2. Identify impacted layer.
+3. Define scope clearly.
+4. Confirm reversibility.
+5. Implement in small increments.
+6. Log change in CHANGELOG.
+
+No blind merges.
+No silent structural edits.
+
+---
+
+# 34. DEFINITION OF "DONE"
+
+A feature is considered complete only when:
+
+- It operates reliably under restart.
+- It does not contaminate other layers.
+- It is documented.
+- It does not introduce architectural drift.
+- It is reversible if needed.
+
+Temporary success is not considered completion.
+
+---
+
+# 35. OPERATING PRINCIPLE
+
+We are building a trading systems laboratory.
+
+Not a quick bot.
+
+Structure first.
+Execution second.
+Optimization last.
+
+Deviation requires explicit documentation and justification.
